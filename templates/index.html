@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Translator</title>
+</head>
+<body>
+    <h1>Upload File untuk Diterjemahkan</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">Pilih File (PDF atau DOCX):</label>
+        <input type="file" name="file" required><br><br>
+
+        <label for="source_language">Bahasa Sumber:</label>
+        <select name="source_language" id="source_language">
+            <option value="en">Inggris</option>
+            <option value="de">Jerman</option>
+            <option value="zh">Mandarin</option>
+            <option value="id">Indonesia</option>
+        </select><br><br>
+
+        <label for="target_language">Bahasa Target:</label>
+        <select name="target_language" id="target_language">
+            <option value="en">Inggris</option>
+            <option value="de">Jerman</option>
+            <option value="zh-CN">Mandarin</option>
+            <option value="id">Indonesia</option>
+        </select><br><br>
+
+        <input type="submit" value="Upload & Terjemahkan">
+    </form>
+</body>
+</html>
