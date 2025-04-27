@@ -1,7 +1,8 @@
-Flask==2.2.2
-werkzeug==2.2.2
-pdfplumber==0.6.0
-deep-translator==1.9.1
-python-docx==0.8.11
-pandas==1.4.2
-openpyxl==3.0.10
+flask
+gunicorn
+werkzeug
+pdfplumber
+deep-translator
+python-docx
+pandas
+openpyxl
