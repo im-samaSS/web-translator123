@@ -1,0 +1,238 @@
+/* Reset dasar */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+display: flex;
+height: 100vh;
+background: #f7f9fc;
+}
+
+/* Sidebar */
+nav {
+width: 220px;
+background: #ffffff;
+border-right: 1px solid #ddd;
+padding: 20px;
+}
+
+nav h2 {
+margin-bottom: 30px;
+font-size: 22px;
+color: #333;
+}
+
+nav ul {
+list-style: none;
+}
+
+nav ul li {
+margin-bottom: 20px;
+}
+
+nav ul li a {
+text-decoration: none;
+font-size: 18px;
+color: #555;
+transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+color: #007bff;
+}
+
+/* Konten utama */
+main {
+flex: 1;
+padding: 40px;
+overflow-y: auto;
+}
+
+.content {
+display: none;
+}
+
+.content.active {
+display: block;
+}
+
+h3 {
+margin-bottom: 20px;
+color: #333;
+}
+
+/* Dropdown bahasa */
+.lang-select {
+margin-bottom: 20px;
+font-size: 18px;
+}
+
+.lang-select select {
+padding: 8px 12px;
+margin: 0 5px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+/* Textarea Input dan Output */
+.textarea-container {
+display: flex;
+gap: 20px;
+margin-bottom: 20px;
+}
+
+.textarea-container textarea {
+flex: 1;
+height: 220px;
+padding: 15px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 8px;
+resize: vertical;
+}
+
+/* Tombol */
+button {
+margin: 20px 0;
+padding: 10px 20px;
+font-size: 16px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+
+/* Spinner loading */
+.spinner {
+border: 6px solid #f3f3f3;
+border-top: 6px solid #007bff;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+animation: spin 1s linear infinite;
+margin-top: 20px;
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+body {
+    flex-direction: column;
+}
+
+nav {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+}
+
+main {
+    padding: 20px;
+}
+
+.textarea-container {
+    flex-direction: column;
+}
+}
+.upload-box {
+border: 2px dashed #007bff;
+border-radius: 10px;
+padding: 40px;
+text-align: center;
+color: #555;
+background-color: #f0f8ff;
+cursor: pointer;
+transition: background-color 0.3s, border-color 0.3s;
+}
+
+.upload-box:hover {
+background-color: #e6f2ff;
+border-color: #0056b3;
+}
+
+.file-name {
+margin-top: 15px;
+font-size: 16px;
+color: #333;
+word-break: break-all;
+}
+.target-lang {
+margin-bottom: 20px;
+}
+
+.target-lang label {
+display: block;
+margin-bottom: 8px;
+font-weight: bold;
+}
+
+.target-lang select {
+width: 100%;
+padding: 8px;
+border-radius: 6px;
+border: 1px solid #ccc;
+}
+.terjemahan {
+display: block;
+margin: 0 auto;
+background-color: blue;
+color: white;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.terjemahan:hover {
+background-color: darkblue;
+}
+
+/* Login Page Style */
+.login-page {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: white;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+width: 300px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.login-page input {
+width: 100%;
+margin-bottom: 15px;
+padding: 10px;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+.error-message {
+color: red;
+margin-top: 10px;
+font-size: 14px;
+}
+    
+  
+  
