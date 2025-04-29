@@ -1,8 +1,8 @@
-flask
-gunicorn
-werkzeug
-pdfplumber
+Flask
+Werkzeug
 deep-translator
 python-docx
 pandas
-openpyxl
+reportlab
+PyMuPDF
+gunicorn
