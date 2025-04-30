@@ -92,8 +92,11 @@ def extract_images(input_pdf_path):
     return images
 # Fungsi untuk menerjemahkan teks
 def translate_doc(text, source_language='auto', target_language='id'):
-    translated_text = GoogleTranslator(source=source_language, target=target_language).translate(text)
-    return translated_text
+    try:
+        translated_text = GoogleTranslator(source=source_language, target=target_language).translate(text)
+        return translated_text
+    except Exception as e:
+        return "[Translation failed]"
 
 # Fungsi untuk menyimpan teks terjemahan ke dalam file Word
 def save_to_word(text, output_word_path):
